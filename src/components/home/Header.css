@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(187, 212, 220, 0.5);
+    position: sticky;
+    align-items: center;
+    top: 0;
+}
+
+.icon {
+
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.navMoblie {
+    display: none;
+}
+
+.closeBtn {
+    display: none;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.name span {
+    font-size: 3rem;
+    color: rgb(0, 0, 255);
+    font-weight: 900;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5rem;
+    font-size: 1.5rem;
+    transition: 2ms;
+    padding: 0rem 3rem;
+    z-index: 200;
+}
+
+.menu li {
+    cursor: pointer;
+
+}
+
+.menuhr {
+    height: .4rem;
+    background: blue;
+    border-radius: .2rem;
+
+}
+
+/* .menu li:hover {
+    border-bottom: 5px solid blue;
+
+} */
+
+/* .contect {
+    display: flex;
+    align-items: center;
+
+} */
+
+
+
+.contect {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    margin: 0.5rem 3rem;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contect p:hover {
+    background-color: rgb(63, 63, 149);
+    transform: scale(1.05);
+}
+
+@media (max-width:850px) {
+    .contect {
+        display: none;
+    }
+}
+
+@media(max-width:630px) {
+    .navMoblie {
+        display: block;
+        position: fixed;
+        right: 3rem;
+        margin-left: 3rem;
+        font-size: 3rem;
+
+    }
+
+    .closeBtn {
+        display: block;
+        position: relative;
+        top: 3rem;
+        left: 10rem;
+        width: 10%;
+        font-size: 3rem;
+    }
+
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        right: 0;
+        gap: 4rem;
+        width: 27rem;
+        background-color: rgba(187, 212, 220, 0.5);
+        height: 100%;
+        z-index: 100;
+        transition: right 0.5s;
+
+    }
+
+    .header {
+        justify-content: start;
+    }
+
+    /* .menu li:hover {
+        background-color: none;
+        padding: 1rem 8rem;
+
+    } */
+
+}

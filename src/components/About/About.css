@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.aboutHead {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 0rem;
+}
+
+.aboutDetail {
+    display: flex;
+
+    gap: 7rem;
+    margin: 2rem 7rem;
+    font-size: 2rem;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media (max-width:1000px) {
+    .aboutDetail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutImg {
+        width: 80%;
+    }
+
+}
