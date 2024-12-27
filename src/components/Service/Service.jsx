@@ -3,7 +3,7 @@ import service from '../../assets/Object/ServiceObject'
 import './service.css'
 import { FaArrowRight } from "react-icons/fa6";
 import Home from '../home/Home';
-import Contect from '../contect/Contect';
+import Contect from '../contact/Conatct';
 import About from '../About/About';
 function Service() {
     return (

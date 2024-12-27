@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { contextApi } from '../../useContextApi/useContextApi'
-import './Contect.css'
+import './Contact.css'
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";

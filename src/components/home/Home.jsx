@@ -3,7 +3,7 @@ import './Home.css'
 import banner from '../../assets/imageSlider/banner.jpg'
 import Service from '../Service/Service'
 import About from '../About/About'
-import Contect from '../contect/Contect'
+import Contect from '../contact/Conatct'
 
 
 function Home() {
