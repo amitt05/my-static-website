@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 
 function Contact() {
-    const { vikasGmail, vikasPhone, location, amitGmail, amitPhone, koushalPhone } = useContext(contextApi);
+    const {  location, amitGmail, amitPhone } = useContext(contextApi);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
@@ -53,7 +53,7 @@ function Contact() {
                     setError('Something went wrong. Please try again.');
                     setSuccessMessage('');
                 }
-            } catch (error) {
+            } catch{
                 setError('Network error. Please try again later.');
                 setSuccessMessage('');
             }
@@ -72,7 +72,7 @@ function Contact() {
             <h1 className='contentHead' id='contactMe'>Contact Me</h1>
             <div className='ContactContainer'>
                 <section className='ContactLeft'>
-                    <h2>Let's Talk</h2>
+                    <h2>Lets Talk</h2>
                     <p className='contentParagraph'>
                         Digital marketing is the promotion of products or services through online channels, including social media, search engines, email, and websites. It focuses on reaching a targeted audience to drive engagement and conversions using digital tools and strategies.
                     </p>
